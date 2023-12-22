@@ -1,0 +1,25 @@
+.homepage-container {
+    height: 100vh;
+    background-color: #444444;
+}
+
+.carousel-container {
+    height: 300px;
+    width: 300px;
+}
+
+.homepage-carousel-image {
+    height: 100%;
+    width: 100%
+}
+
+.custom-jumbotron {
+    width: 60%;
+    color: white;
+}
+
+.homepage-carousel-caption {
+    background-color: black;
+    max-width: fit-content;
+    max-height: fit-content;
+}
