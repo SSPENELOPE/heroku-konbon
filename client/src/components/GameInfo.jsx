@@ -6,6 +6,7 @@ import { Accordion } from "react-bootstrap";
 import AddGameComments from "./AddGameComments";
 import GetGameComments from "./GetGameComments";
 import "../assets/css/GameInfo.css";
+import StarRating from "../components/StarRating/StarRating";
 
 function GameInfo(props) {
   const game = props?.game;
@@ -30,7 +31,9 @@ function GameInfo(props) {
           <ListGroup className="list-group-flush">
             <ListGroup.Item>Company: {game?.developers[0].name}</ListGroup.Item>
             <ListGroup.Item>Rating: {game?.esrb_rating.name}</ListGroup.Item>
-            <ListGroup.Item>Kon-Bon Stars:</ListGroup.Item>
+            <ListGroup.Item>
+              Kon-Bon Stars:  <StarRating game={game} />
+            </ListGroup.Item>
           </ListGroup>
           <Card.Body>
             <Card.Link href="#">Another Link</Card.Link>
