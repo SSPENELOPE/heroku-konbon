@@ -1,5 +1,5 @@
 const express = require("express");
-
+const path = require('path');
 const sequelize = require("./connection/connection.js");
 const cors = require("cors");
 const routes = require("./controller");
