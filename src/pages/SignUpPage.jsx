@@ -21,7 +21,7 @@ const SignUpPage = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:3001/auth/signup", {
+      const response = await fetch("https://konbon-backend-b295c756b711.herokuapp.com/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

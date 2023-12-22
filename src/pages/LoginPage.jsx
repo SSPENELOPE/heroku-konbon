@@ -26,7 +26,7 @@ function LoginPage() {
 
     console.log(data);
 
-    const response = await fetch("http://localhost:3001/auth/login", {
+    const response = await fetch("https://konbon-backend-b295c756b711.herokuapp.com/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

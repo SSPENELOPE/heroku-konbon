@@ -16,7 +16,7 @@ const GameDetails = () => {
 
   const [isLoading, setIsLoading] = useState(true);
   const getGameById = async (gameId) => {
-    const url = `http://localhost:3001/api/gameById/${gameId}`;
+    const url = `https://konbon-backend-b295c756b711.herokuapp.com/api/gameById/${gameId}`;
 
     const response = await fetch(url, {
       method: "GET",
@@ -37,6 +37,7 @@ const GameDetails = () => {
   useEffect(() => {
     getGameById(gameId);
   }, [gameId]);
+  
   if (isLoading) {
     return (
       <div>
