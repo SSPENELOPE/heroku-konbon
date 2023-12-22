@@ -6,6 +6,7 @@ import doomguy from "../assets/images/doomguy-bg.webp";
 import okage from "../assets/images/okage-bg.webp";
 import supermariogalaxy from "../assets/images/supermariogalaxy-bg.webp";
 import Auth from "../utils/authUtil";
+import Particle from "../components/Particles";
 
 function Home() {
   const userId = Auth.getUserId();
@@ -13,16 +14,17 @@ function Home() {
 
   return (
     <div className="homepage-container">
+       <Particle />
       <Navbar />
       <div className="d-flex p-2 justify-content-evenly align-items-center flex-wrap">
-        <div className="jumbotron mt-1 custom-jumbotron">
+        <div className="jumbotron mt-1 custom-jumbotron bg-dark text-light">
           {isLoggedIn ? <div>How are you </div> : <div></div>}
-          <h1 className="display-4">All about us!</h1>
-          <p className="lead">We connect People</p>
-          <hr className="my-4" />
-          <p>Come along and find like-minded gamers.</p>
-          <p className="lead">
-            <Link to="/signup" className="btn btn-warning">
+          <h1 className="display-4 text-light">All about us!</h1>
+          <p className="lead text-light">We connect People</p>
+          <hr className="my-4 text-light" />
+          <p className="text-light">Come along and find like-minded gamers.</p>
+          <p className="lead text-light">
+            <Link to="/signup" className="btn btn-warning text-light">
               Sign-up
             </Link>
           </p>

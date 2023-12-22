@@ -36,7 +36,7 @@ function GameInfo(props) {
             </ListGroup.Item>
           </ListGroup>
           <Card.Body>
-            <Card.Link href="#">Another Link</Card.Link>
+            <Card.Link href="#">Coming Soon</Card.Link>
           </Card.Body>
         </Card>
       </div>
