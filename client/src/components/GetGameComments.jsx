@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Auth from "../utils/authUtil";
+import "../assets/css/GetGameComments.css";
 
 function GameComment(props) {
   const userName = Auth.getUsername();
@@ -11,7 +12,7 @@ function GameComment(props) {
     <div>
       {comments.map((comment) => (
         <Card key={comment.id}>
-          <Card.Header>{userName}</Card.Header>
+          <Card.Header className="comment_background">Anonymous</Card.Header>
           <Card.Body>
             <blockquote className="blockquote mb-0">
               <p> {comment.text} </p>

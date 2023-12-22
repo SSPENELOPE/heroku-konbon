@@ -1,0 +1,61 @@
+.gameInfo-wrapper {
+  height: 100vh;
+}
+.accordian_header {
+    background: linear-gradient(
+    315deg,
+    #c5c3c3 0%,
+    #979090 100%,
+    #d4d6d8 100%
+  );
+}
+
+.description_background {
+    background: linear-gradient(
+    315deg,
+    #c5c3c3 0%,
+    #979090 100%,
+    #d4d6d8 100%
+  );
+}
+.body_container {
+    padding-top: 5px;
+    background: linear-gradient(
+    315deg,
+    #888a8a 0%,
+    #f2f2f2 100%,
+    #1b2024 100%
+  );
+}
+
+/* .card_container {
+    background: linear-gradient(
+    315deg,
+    #f3f0f0 0%,
+    #2f3b43 100%,
+    #d3d3d3 100%
+  );;
+} */
+/* ------ PALETTE 1
+--color00: #202020;
+--color01: #0033ff;
+--color02: #172dff;
+--color03: #2d28ff;
+--color04: #4422ff;
+--color05: #5b1cff;
+--color06: #7117ff;
+--color07: #8811ff;
+--color08: #9f0bff;
+--color09: #b506ff;
+--color10: #cc00ff;
+
+--color11: #00f2ff;
+--color12: #00e5ff;
+--color13: #00d9ff;
+--color14: #00ccff;
+--color15: #00c3ff;
+--color16: #00b7ff;
+--color17: #00aaff;
+--color18: #009dff;
+--color19: #0091ff;
+--color20: #0084ff;  */

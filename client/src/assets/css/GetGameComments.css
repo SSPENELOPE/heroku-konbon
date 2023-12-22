@@ -1,0 +1,12 @@
+.comment_background {
+    background: linear-gradient(
+    315deg,
+    #1a1919 0%,
+    #ebe7e7 100%,
+    #ebe9e9 100%
+  );
+}
+
+.butn {
+    margin-top: 5px;
+}
