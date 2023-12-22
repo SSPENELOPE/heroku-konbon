@@ -36,21 +36,15 @@ function LoginPage() {
     });
 
     const resData = await response.json()
-    console.log(response);
-    console.log("Response Data:", resData);
-
-    // Check if the cookie is received
-    console.log("Document Cookie:", document.cookie);
-
 
     if (response.status === 200) {
       toast.success(`${resData.message}`, {
         position: toast.POSITION.TOP_CENTER,
         draggable: false,
       });
-      localStorage.setItem("JWT", JSON.stringify(resData.jwt))
+
       setTimeout(() => {
-        // window.location.replace("/");
+        window.location.replace("/");
       }, 2000)
     } else {
 
