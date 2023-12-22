@@ -6,7 +6,6 @@ import doomguy from "../assets/images/doomguy-bg.webp";
 import okage from "../assets/images/okage-bg.webp";
 import supermariogalaxy from "../assets/images/supermariogalaxy-bg.webp";
 import Auth from "../utils/authUtil";
-import Particle from "../components/Particles";
 
 function Home() {
   const userId = Auth.getUserId();
@@ -14,7 +13,6 @@ function Home() {
 
   return (
     <div className="homepage-container">
-       <Particle />
       <Navbar />
       <div className="d-flex p-2 justify-content-evenly align-items-center flex-wrap">
         <div className="jumbotron mt-1 custom-jumbotron bg-dark text-light">
