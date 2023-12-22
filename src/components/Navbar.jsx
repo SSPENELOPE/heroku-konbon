@@ -44,7 +44,7 @@ const Navbar = () => {
 
         {Auth.isLoggedIn() ? (
           <div className="col">
-            <button onClick={() => Auth.logout()} id="login"  className={activeButton === "login" ? "active" : ""}>
+            <button  id="login"  className={activeButton === "login" ? "active" : ""}>
               <FontAwesomeIcon icon={faDoorOpen} />
               Logout
             </button>
