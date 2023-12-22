@@ -43,6 +43,7 @@ function LoginPage() {
         position: toast.POSITION.TOP_CENTER,
         draggable: false,
       });
+      localStorage.setItem("JWT", JSON.stringify(resData.jwt))
       setTimeout(() => {
         window.location.replace("/");
       }, 2000)
