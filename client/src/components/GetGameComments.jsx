@@ -7,7 +7,12 @@ import "../assets/css/GetGameComments.css";
 function GameComment(props) {
   const userName = Auth.getUsername();
   const comments = props.gameComments;
-  console.log(comments);
+
+  function formatDate(dateString) {
+    const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+    const formattedDate = new Date(dateString).toLocaleString('en-US', options);
+    return formattedDate.toString(); // Convert to string
+  }
   return (
     <div>
       {comments.map((comment) => (
@@ -17,7 +22,7 @@ function GameComment(props) {
             <blockquote className="blockquote mb-0">
               <p> {comment.text} </p>
               <footer className="blockquote-footer">
-                {/* Someone famous in <cite title="Source Title">Source Title</cite> */}
+                <small className="text-muted">{formatDate(comment.createdAt)}</small>
               </footer>
             </blockquote>
           </Card.Body>
